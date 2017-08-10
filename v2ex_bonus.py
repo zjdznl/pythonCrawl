@@ -31,8 +31,6 @@ class V2EX(object):
             passwd_code = login_soup.find('input', {'type' : 'password'})['name']
             once_code = login_soup.find('input', {'type' : 'hidden'})['value']
 
-            #another get code
-
             form_data = {
                 usrname_code:self.usrname,
                 passwd_code:self.passwd,
@@ -56,7 +54,6 @@ class V2EX(object):
 
     def get_daily(self, s):
         '''
-        
         :param s: session 
         :return: None
         '''
